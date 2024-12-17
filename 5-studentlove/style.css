@@ -76,10 +76,11 @@ header{
 
 .banner-wrapper > div{
     width: 50%;
+    text-align: center;
 }
 
 .banner h1{
-    font-size: 48px;
+    font-size: 35px;
     font-weight: 600;
     line-height: 70px;
     margin-bottom: 30px;
@@ -93,6 +94,7 @@ header{
 
 .banner-wrapper > div:nth-child(1) > div{
    display: flex;
+   justify-content: center;
    gap: 35px;
    align-items: center;
 }
@@ -105,4 +107,121 @@ header{
 .banner-wrapper > div:nth-child(1) > div > a:nth-child(1){
     background-color: #FFA92C;
     color: #ffffff;
+}
+
+/* Jobs Start */
+
+.jobs-wrappers{
+    display: flex;
+    gap: 20px;
+}
+
+.jobs-wrappers > div{
+    padding: 30px;
+    color: #ffffff;
+    border-radius: 20px;
+}
+
+.jobs-wrappers > div a{
+    color: #ffffff;
+}
+
+.jobs-wrappers > div:nth-child(1){
+    background-color: #0C445C;
+}
+
+.jobs-wrappers > div:nth-child(2){
+    background-color: #5B2C98;
+}
+
+.jobs-wrappers > div:nth-child(3){
+    background-color: #7F3219;
+}
+
+.jobs-wrappers > div img{
+    margin-bottom: 25px;
+}
+
+.jobs-wrappers > div h4{
+    margin-bottom: 20px;
+}
+
+.jobs-wrappers > div > span{
+    margin: 20px 0px;
+    display: block;
+}
+
+.jobs-wrappers > div > p{
+    margin: 20px 0px;
+}
+
+.jobs-wrappers > div > div{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.jobs-wrappers > div > div > a{
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+}
+
+.jobs-wrappers > div > div > a:hover{
+    background-color: #FFA92C;
+}
+
+
+
+/* Responsive starts */
+
+@media only screen and (min-width: 1100px) {
+    .banner-wrapper h1{
+        font-size: 48px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .banner-wrapper h1 span{
+        display: block;
+    }
+
+    .banner-wrapper > div{
+        text-align: left;
+    }
+
+    .banner-wrapper > div:nth-child(1) > div{
+        justify-content: flex-start;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .banner-wrapper{
+        flex-direction: column;
+    }
+
+    .banner-wrapper > div {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header-wrapper{
+        flex-direction: column;
+        gap: 30px;
+        /* display: block;
+        text-align: center; */ 
+    }
+
+    .banner-wrapper > div:nth-child(1) > div{
+        flex-direction: column;
+        margin-bottom: 30px;
+     }
+/* 
+    .header-wrapper nav{
+        justify-content: center;
+        margin-top: 30px;
+    } */
 }
