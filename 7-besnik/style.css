@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    max-width: 1115px;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* shared style */
+.btn{
+    padding: 15px 25px;
+    border-radius: 30px;
+    color: #ffffff;
+    display: inline-block;
+}
+
+.btn.primary-btn{
+    background-color:#231A36;
+}
+
+.btn.secondary-btn{
+    background-color: rgba(255, 250, 249, 0.2);
+}
+
+/* Header Wrapper */
+
+header{
+    padding: 20px 0px;
+}
+
+header a{
+    color: #ffffff;
+}
+
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-wrapper nav{
+    display: flex;
+    gap: 30px;
+}
+
+/* Banner Start */
+
+main{
+    background: url("./img/banner/bg.png") center no-repeat;
+    /* background-repeat: no-repeat;
+    background-position: center; */
+    background-size: cover;
+}
+
+.banner{
+    padding: 100px 0px;
+}
+
+.banner-wrapper{
+    text-align: center;
+    color: #ffffff;
+}
+
+.banner-wrapper h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.banner-wrapper p{
+    margin-bottom: 50px;
+}
+
+
+
+/* .header-wrapper nav a{
+    margin-right: 30px;
+}
+
+.header-wrapper nav a:last-child{
+    margin-right: 0px;
+} */
+
+
+@media only screen and (min-width: 1000px) {
+    .line-break{
+        display: block;
+    }
+
+    .banner-wrapper h1{
+        font-size: 94px;
+    }
+}
+
+
