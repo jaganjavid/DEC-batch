@@ -33,7 +33,19 @@ a{
 }
 
 .btn.secondary-btn{
+    display: none;
     background-color: rgba(255, 250, 249, 0.2);
+}
+
+.sec-heading{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sec-heading h2{
+    font-size: 40px;
+    font-weight: 600;
+    color: #231A36;
 }
 
 /* Header Wrapper */
@@ -48,8 +60,10 @@ header a{
 
 .header-wrapper{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    gap: 30px;
 }
 
 .header-wrapper nav{
@@ -94,6 +108,68 @@ main{
     margin-right: 0px;
 } */
 
+/* Clients Starts */
+.clients{
+    padding: 80px 0px;
+}
+
+.clients-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.clients-wrapper > div{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* Solutions starts */
+.solutions{
+    padding: 100px 0px;
+}
+
+.solutions .container{
+    width: 750px;
+}
+
+.solutions-wrapper{
+    margin-top: 50px;
+}
+
+.solutions-wrapper > div{
+    display: flex;
+    align-items: center;
+}
+
+.solutions-wrapper > div > div{
+    width: 50%;
+}
+
+.solutions-wrapper > div > div:nth-child(1) span{
+    text-transform: uppercase;
+    color: #B33CDB;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.solutions-wrapper h4{
+    color: #1F1F26;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.solutions-wrapper p{
+    margin: 10px 0px;
+}
+
+.solutions-wrapper > div > div:nth-child(2){
+    text-align: right;
+}
+
 
 @media only screen and (min-width: 1000px) {
     .line-break{
@@ -103,6 +179,27 @@ main{
     .banner-wrapper h1{
         font-size: 94px;
     }
+
+    .clients-wrapper > div{
+        width: 15% !important;
+    }
 }
+
+@media only screen and (min-width: 768px) {
+   .btn.secondary-btn{
+     display: block;
+   }
+}
+
+@media only screen and (min-width: 576px) {
+    .header-wrapper{
+        flex-direction: row;
+    }
+
+    .clients-wrapper > div{
+        width: 50%;
+    }
+}
+
 
 
