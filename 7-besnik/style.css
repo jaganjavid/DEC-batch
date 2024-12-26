@@ -39,13 +39,14 @@ a{
 
 .sec-heading{
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .sec-heading h2{
     font-size: 40px;
     font-weight: 600;
     color: #231A36;
+    margin-bottom: 25px;
 }
 
 /* Header Wrapper */
@@ -176,6 +177,87 @@ main{
     width: 80%;
 }
 
+/* search start */
+
+.search{
+    background-color: #231A36;
+    color: #ffffff;
+    padding: 100px 0px;
+}
+
+.search .sec-heading h2{
+    color: #ffffff !important;
+}
+
+.search-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.search-wrapper h4{
+    font-size: 40px;
+}
+
+/* Need start */
+.need{
+    padding: 100px 0px;
+}
+
+.need-wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.need-wrapper > div {
+    position: relative;
+}
+
+.need-wrapper > div > div{
+    position: absolute;
+    left: 0px;
+    bottom:-85px;
+    background-color: #ffffff;
+    width: 80%;
+    padding: 10px;
+}
+
+.need-wrapper > div > div > div{
+    display: flex;
+    margin: 20px 0px;
+    gap: 25px;
+}
+
+.need-wrapper h4{
+    font-size: 24px;
+}
+
+.need-wrapper > div > div > div span{
+    font-size: 10px;
+}
+
+.happy{
+    padding: 100px 0px;
+}
+
+.happy h2{
+   display: inline-block;
+   position: relative;
+}
+
+
+.happy h2 img{
+    position: absolute;
+    top: -45px;
+    left: -40px;
+}
+/* 
+.happy img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+} */
 
 @media only screen and (min-width: 1000px) {
     .line-break{
@@ -189,6 +271,8 @@ main{
     .clients-wrapper > div{
         width: 15% !important;
     }
+
+    
 }
 
 @media only screen and (min-width: 768px) {
@@ -208,7 +292,7 @@ main{
 
    .solutions-wrapper > div:nth-child(2) > div:nth-child(2) {
     text-align: left;
-   }
+}
   
 
     .solutions-wrapper > div > div{
@@ -228,10 +312,45 @@ main{
     }
 }
 
+@media only screen and (max-width: 992px){
+   .need-wrapper{
+    flex-wrap: wrap;
+   }
+
+   .need-wrapper > div:nth-child(1),
+   .need-wrapper > div:nth-child(2){
+    width: 48%;
+    margin-bottom: 100px;
+   }
+
+   .need-wrapper > div:nth-child(3){
+    width: 100%;
+   }
+}
+
+@media only screen and (max-width: 800px){
+    .need-wrapper{
+     flex-wrap: wrap;
+     justify-content: center;
+    }
+ 
+    .need-wrapper > div:nth-child(1),
+    .need-wrapper > div:nth-child(2),
+    .need-wrapper > div:nth-child(3){
+     width: 60%;
+    }
+
+ }
 
 @media only screen and (max-width: 768px){
     .solutions-wrapper>div{
         text-align: center;
+    }
+
+    .search-wrapper > div{
+        width: 50%;
+        text-align: center;
+        margin-top: 20px;
     }
 }
 
