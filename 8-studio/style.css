@@ -38,6 +38,10 @@ body{
     margin-bottom: 30px;
 }
 
+h2{
+    font-size: 40px;
+}
+
 .container{
     max-width: 1200px;
     margin: 0px auto;
@@ -113,8 +117,80 @@ header{
     width: 50%;
 }
 
+/* business */
+
+.business{
+    padding: 300px 0px;
+    position: relative;
+    background: url("./img/business/bg-2.png") no-repeat center;
+    background-size: cover;
+}
+
+.business h2{
+    position: relative;
+    z-index: 1;
+}
+
+.business h2 img{
+    position: absolute;
+    top: -45px;
+    left: -40px;
+    z-index: -1;
+}
+
+.business-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.business-wrapper h5{
+    font-size: 20px;
+}
+
+.business-wrapper>div:last-child>div{
+    display: flex;
+    gap: 30px;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.business-wrapper>div:last-child>div>div{
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.2);
+    padding:30px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    min-height: 379px;
+}
 
 
+/* agency */
+
+.agency{
+    padding: 100px 0px;
+}
+.agency-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:50px;
+}
+
+.agency-wrapper h2{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.agency-wrapper h2 img{
+    position: absolute;
+    top: 0px;
+    left: -50px;
+    z-index: -1;
+}
+
+.agency-wrapper>div:nth-child(1)img{
+    width: 100%;
+}
 
 
 @media only screen and (min-width: 1200px) {
@@ -169,10 +245,50 @@ header{
         margin-top: 10px;
     }
     
+}
+
+
+@media only screen and (min-width: 996px) {
+
+    .business-1{
+        position: relative;
+        top: -80px;
+    }
+    
+    .business-2{
+        position: relative;
+        top: -50px;
+    }
+
+    .business-wrapper>div:first-child{
+        width: 40%;
+    }
+    
+    .business-wrapper>div:last-child{
+        width: 60%;
+    }
+
+    .agency-wrapper>div{
+        width: 50%;
+    }
     
 
-    
 }
+
+
+@media only screen and (min-width: 1400px) {
+
+    .container{
+        max-width: 1320px;
+    }
+   
+    
+
+}
+
+
+
+
 
 
 @media only screen and (max-width: 1200px) {
@@ -217,6 +333,31 @@ header{
 
     .digital-wrapper > div:nth-child(2) img{
         width: 60%;
+    }
+
+    
+    .business{
+        padding: 100px 0px;
+    }
+
+    .business-wrapper{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .agency-wrapper{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    
+
+}
+
+
+@media only screen and (max-width: 576px) {
+    .business-wrapper>div:last-child>div{
+        flex-direction: column;
     }
 
 }
