@@ -24,6 +24,7 @@ body{
     margin-top: 30px;
     display: inline-block;
     border-radius: 30px;
+    border: none;
 }
 
 .mb-2{
@@ -46,6 +47,15 @@ h2{
     max-width: 1200px;
     margin: 0px auto;
     padding: 0px 15px;
+}
+
+.sec-heading{
+    text-align: center;
+}
+
+input:focus{
+    outline: none;
+    border: none;
 }
 
 /* header */
@@ -192,6 +202,10 @@ header{
     width: 100%;
 }
 
+.happy {
+    padding: 100px 0px;
+}
+
 
 @media only screen and (min-width: 1200px) {
 
@@ -247,6 +261,79 @@ header{
     
 }
 
+/* subscribe */
+
+.subscribe{
+    padding: 100px 0px;
+}
+
+.subscribe .container{
+    position: relative;
+}
+
+.subscribe .container>img:nth-of-type(1),
+.subscribe .container>img:nth-of-type(2){
+    position: absolute;
+    z-index: -1;
+}
+
+.subscribe .container>img:nth-of-type(1){
+    top: -55px;
+    right: -30px;
+}
+
+.subscribe .container>img:nth-of-type(2){
+    bottom: -35px;
+    left: -15px;
+}
+
+.subscribe-wrapper{
+    display: flex;
+    align-items: center;
+    padding: 150px 65px;
+    background:url("./img/subscribe/bg.svg") no-repeat center;
+    background-size: cover;
+    border-radius: 60px;
+}
+
+.subscribe-wrapper h2{
+    font-size: 30px;
+}
+
+.subscribe-wrapper p{
+    font-size: 10px;
+}
+
+
+.subscribe-wrapper > div:last-child{
+    width: 100%;
+    position: relative;
+}
+
+.subscribe-wrapper input{
+  width: 100%;
+  padding: 30px 10px;
+  border-radius: 60px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.subscribe-btn{
+    min-width: 120px;
+    min-height: 59px;
+    background-color: blue;
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+}
+
+.subscribe-wrapper button{
+    position: absolute;
+    top: 8px;
+    right: 10px;
+}
+
+
 
 @media only screen and (min-width: 996px) {
 
@@ -271,7 +358,32 @@ header{
     .agency-wrapper>div{
         width: 50%;
     }
+
+    .subscribe-wrapper > div:first-child{
+        width: 50%;
+    }
     
+    .subscribe-wrapper > div:last-child{
+        width: 50%;
+        position: relative;
+    }
+    
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .subscribe-wrapper h2{
+        font-size: 40px;
+    }
+
+    .subscribe-wrapper p{
+        font-size: 16px;
+    }
+
+    .subscribe-btn{
+        min-width: 187px;
+    }
 
 }
 
@@ -350,6 +462,12 @@ header{
         text-align: center;
     }
 
+    .subscribe-wrapper{
+        flex-direction: column;
+        gap: 50px;
+        text-align: center;
+    }
+
     
 
 }
@@ -359,6 +477,11 @@ header{
     .business-wrapper>div:last-child>div{
         flex-direction: column;
     }
+
+    .subscribe-wrapper{
+        /* background-position: 65% 50%; */
+    }
+    
 
 }
 
